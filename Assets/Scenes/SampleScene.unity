@@ -173,6 +173,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -699,6 +720,14 @@ PrefabInstance:
       propertyPath: panel_diag_chooseDiff
       value: 
       objectReference: {fileID: 896466367}
+    - target: {fileID: 7725118856631171444, guid: 39a68949e68ca944795904d0459cd2b9, type: 3}
+      propertyPath: strGameCD
+      value: E26
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725118856631171444, guid: 39a68949e68ca944795904d0459cd2b9, type: 3}
+      propertyPath: strGameKey
+      value: wyTl6okyoA1edmcCRHYtk3ZBx8NMoc3U-ETGb78ZW60
+      objectReference: {fileID: 0}
     - target: {fileID: 7725118856631171445, guid: 39a68949e68ca944795904d0459cd2b9, type: 3}
       propertyPath: m_RootOrder
       value: 3
