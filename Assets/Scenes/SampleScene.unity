@@ -722,11 +722,11 @@ PrefabInstance:
       objectReference: {fileID: 896466367}
     - target: {fileID: 7725118856631171444, guid: 39a68949e68ca944795904d0459cd2b9, type: 3}
       propertyPath: strGameCD
-      value: E26
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7725118856631171444, guid: 39a68949e68ca944795904d0459cd2b9, type: 3}
       propertyPath: strGameKey
-      value: wyTl6okyoA1edmcCRHYtk3ZBx8NMoc3U-ETGb78ZW60
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7725118856631171445, guid: 39a68949e68ca944795904d0459cd2b9, type: 3}
       propertyPath: m_RootOrder
