@@ -615,6 +615,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5795542880197182313, guid: de04d9c3cb1fc634f8ea2e857cb7f719, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795542880197182313, guid: de04d9c3cb1fc634f8ea2e857cb7f719, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795542880197182313, guid: de04d9c3cb1fc634f8ea2e857cb7f719, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795542880197182313, guid: de04d9c3cb1fc634f8ea2e857cb7f719, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5795542880197182314, guid: de04d9c3cb1fc634f8ea2e857cb7f719, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -665,9 +681,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7725118856631171443, guid: 39a68949e68ca944795904d0459cd2b9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725118856631171443, guid: 39a68949e68ca944795904d0459cd2b9, type: 3}
       propertyPath: textEquation
       value: 
       objectReference: {fileID: 1544710771}
+    - target: {fileID: 7725118856631171443, guid: 39a68949e68ca944795904d0459cd2b9, type: 3}
+      propertyPath: currentStatus
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7725118856631171443, guid: 39a68949e68ca944795904d0459cd2b9, type: 3}
       propertyPath: panel_question
       value: 
