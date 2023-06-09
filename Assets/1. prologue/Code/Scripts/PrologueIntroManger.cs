@@ -7,8 +7,11 @@ public class PrologueIntroManger : MonoBehaviour
     [SerializeField]
     DialogueSystem dialogueSystem;
 
-    void Start()
+    IEnumerator Start()
     {
+
+        yield return new WaitForSeconds(1);
+
         dialogueSystem.Trigger();
     }
 }

@@ -7,6 +7,8 @@ public class DialogueSystem : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI txtName;
     [SerializeField] private Dialogue info;
+    [SerializeField] private AudioClip typingSoundClip;
+    private AudioSource audioSource;
 
     public TextMeshProUGUI TxtName
     {
@@ -38,13 +40,20 @@ public class DialogueSystem : MonoBehaviour
     {
         this.Begin(info);
     }
-    
+
     private Queue<string> sentences = new Queue<string>();
 
     [SerializeField] private Animator animator;
 
     public void Begin(Dialogue info)
     {
+
+        GameObject child = new GameObject("TYPING");
+        child.transform.SetParent(transform);
+        audioSource = child.AddComponent<AudioSource>();
+        audioSource.clip = typingSoundClip;
+        audioSource.loop = true;
+
         animator.SetBool("isOpen", true);
         sentences.Clear();
 
@@ -66,7 +75,6 @@ public class DialogueSystem : MonoBehaviour
             return;
         }
 
-        //TxtSentence.text = sentences.Dequeue();
         TxtSentence.text = string.Empty;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentences.Dequeue()));
@@ -74,11 +82,13 @@ public class DialogueSystem : MonoBehaviour
 
     IEnumerator TypeSentence(string sentence)
     {
+        audioSource.Play();
         foreach (var letter in sentence)
         {
             txtSentence.text += letter;
             yield return new WaitForSeconds(0.1f);
         }
+        audioSource.Stop();
     }
 
     private void End()

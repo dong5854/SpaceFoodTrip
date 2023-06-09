@@ -776,7 +776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   masterVolumeSFX: 1
-  masterVolumeBGM: 1
+  masterVolumeBGM: 0
   BGMClip: {fileID: 8300000, guid: 66f75127675ca3341a2b0155dc7a14ed, type: 3}
   audioClip: []
 --- !u!4 &1422065185
@@ -959,6 +959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtName: {fileID: 1441334435}
+  typingSoundClip: {fileID: 8300000, guid: 0b3687e34a2ae4e8baaf009375b063f8, type: 3}
   info:
     name: ???
     sentences:
