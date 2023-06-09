@@ -6,6 +6,7 @@ using TMPro;
 public class DialogueSystem : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI txtName;
+    [SerializeField] private Dialogue info;
 
     public TextMeshProUGUI TxtName
     {
@@ -33,6 +34,11 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
+    public void Trigger()
+    {
+        this.Begin(info);
+    }
+    
     private Queue<string> sentences = new Queue<string>();
 
     [SerializeField] private Animator animator;
