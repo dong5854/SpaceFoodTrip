@@ -5,10 +5,21 @@ using TMPro;
 
 public class DialogueSystem : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI txtName;
+
     [SerializeField] private Dialogue info;
     [SerializeField] private AudioClip typingSoundClip;
     private AudioSource audioSource;
+    private bool isDone;
+
+    public bool IsDone
+    {
+        get
+        {
+            return isDone;
+        }
+    }
+
+    [SerializeField] private TextMeshProUGUI txtName;
 
     public TextMeshProUGUI TxtName
     {
@@ -47,6 +58,8 @@ public class DialogueSystem : MonoBehaviour
 
     public void Begin(Dialogue info)
     {
+
+        isDone = false;
 
         GameObject child = new GameObject("TYPING");
         child.transform.SetParent(transform);
@@ -93,6 +106,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void End()
     {
+        isDone = true;
         animator.SetBool("isOpen", false);
         TxtSentence.text = string.Empty;
     }
