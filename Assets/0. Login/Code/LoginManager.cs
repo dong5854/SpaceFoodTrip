@@ -45,8 +45,15 @@ public class LoginManager : MonoBehaviour
         {
             string jwtAuthToken = request.GetResponseHeader("Authorization");
             string message = request.downloadHandler.text;
+            PlayerPrefs.SetString("jwtAuthToken", jwtAuthToken);
+            PlayerPrefs.SetString("loginEmail", loginEmail.text);
+            PlayerPrefs.SetString("loginPw", loginPw.text);
+            PlayerPrefs.Save();
+
             Debug.Log("메시지: " + message);
             Debug.Log("토큰 값: " + jwtAuthToken);
+
+            request.Dispose();
         }
     }
 }
